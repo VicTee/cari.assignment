@@ -1,0 +1,233 @@
+<div class="wrapper">
+<div id="menu">
+<ul>
+<li>
+<a href=#>HOME</>
+</li>
+<li>
+<a href=#>ABOUT US</>
+</li>
+<li>
+<a href=#>PRODUCT & SERVICES </>
+</li>
+<li>
+<a href=#>CLIENTS</>
+</li>
+<li>
+<a href=#>CONTACT US</>
+</li>
+</ul>
+<div>
+<div class="middle-div">
+<div class="Div1">
+<p>
+Bernard Madoff’s victims are getting an early holiday treat as the trustee unwinding his fraud begins sending out a total of $1.2 billion in recovered funds, with checks averaging $1.1 million each.
+The biggest payout to victims in more than three years comes a week before the anniversary of Madoff’s Dec. 11, 2008, arrest, when thousands of retirees, charities, investment funds and other clients discovered they’d lost $17.5 billion in principal in the decades-old Ponzi scheme.
+</p>
+</div>
+<div class="Div2">
+<div id="map">
+<script type="text/javascript">
+        $(document).ready(function () {
+            $(function () {
+                $('#map').goMap({
+                    address: '2823 Franklin RD SW ROANOKE, VA 24014',
+                    zoom: 16,
+                    scaleControl: true,
+                    maptype: 'ROADMAP'
+                }); // end roanoke map
+                $.goMap.createMarker({
+                    address: '2823 Franklin RD SW ROANOKE, VA 24014',                    
+                    html: {
+                        popup: true
+                    }
+                }); // end createMarker
+            }); // end function
+
+
+            $('#addrBtn').click(function () {
+                var addrFld = $('#addr').val();
+                if (addrFld != '') {
+                    $(function () {
+                        $('#map').goMap({
+                            address: addrFld,
+                            zoom: 16,
+                            scaleControl: true,
+                            maptype: 'ROADMAP'
+                        }); // end map
+                        $.goMap.createMarker({
+                            address: addrFld,
+                            title: addrFld,
+                            html: {
+                                content: addrFld,
+                                popup: true
+                            }
+                        }); // end createMarker
+                    });
+                };
+
+            });
+
+
+        });
+
+</script>
+<!--map address and navigation-->
+<div class="mapAddr">
+<p>2823 Franklin RD SW</p>
+<p>ROANOKE, VA 24014</p>
+</div>
+<div class="navigate">
+<input type="button" name="navigate">
+</div>
+</div>
+
+</div>
+</div><!--ends container -->
+</div><!--ends wrapper -->
+<div class="theFooter">
+<div class="empty">
+<p>Some information<p>
+</div>
+</div>
+
+
+
+
+
+  <div id="menu">
+                        <ul>
+                            <li><a href="index.html" class="active">Home</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div style="clear: both;"></div>
+
+
+/*Menu*/
+#menu{
+    background: url(images/menu_bg.png) no-repeat top left;
+    width: 1000px;
+    height: 49px;
+    padding-bottom: 10px;
+}
+
+#menu ul {
+    padding-left: 0px;
+    width: 750px;
+    margin: 0 auto;
+}
+
+#menu li {
+    display: inline;
+}
+
+#menu a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    float: left;
+    width: 150px;
+    height: 32px;
+    padding-top: 17px;
+
+}
+
+#menu a:hover, #menu .active {
+    height: 32px;
+    background:
+}
+
+
+
+
+
+old menu
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #BC9956;    
+    
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #ffffcc;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #ffffcc; on hover */
+li a:hover {
+    background-color: #ffffcc;;
+}
+
+
+
+
+
+
+
+
+
+=============working
+
+/*Menu*/
+#menu1{
+    background-color: #C6C4B1; 
+    width: 60%;
+    height: 28px;   
+	margin:auto;	
+	border-radius:6px;p
+}
+
+#menu1 ul {
+    padding-left: 20px;
+    display:table;
+	top:20px;	
+	list-style-type: none;
+	width:100%;
+
+}
+
+
+#menu1 li {
+    display: inline;
+	float:left;
+	width:33%;
+	
+}
+
+#menu1 a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .60em;
+    font-weight: normal;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    float: left;  
+    /*padding-top: 8px;*/
+	/*padding: 6px;*/
+    padding: 6px;
+   
+	
+
+}
+
+<h3>540-224-4100</h3>

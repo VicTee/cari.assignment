@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--
+   <link href="Styles/Site.css" rel="stylesheet" type="text/css" />  
+   
+   <link href="Styles/Site2.css" rel="stylesheet" type="text/css" />  
+   
+
+   <script type="text/javascript"src="Scripts/jquery-1.6.3.min.js"></script>
+  
+   
+  --> 
+     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	  <script type="text/javascript"src="Scripts/jquery.gomap-1.3.2.min.js"></script>
+	   <script type="text/javascript"src="Scripts/jquery-1.6.3.min.js"></script>
+ <style type="text/css" >       
+
+ @font-face {
+     font-family: MyriadPro;
+     src: url(fonts\MyriadPro-Bold.otf);
+	 src: url(fonts\MyriadPro-BoldCond.otf);
+	 src: url(fonts\MyriadPro-BoldCondlt.otf);
+	 src: url(fonts\MyriadPro-Boldlt.otf);
+	 src: url(fonts\MyriadPro-Cond.otf);
+	 src: url(fonts\MyriadPro-Condlt.otf);
+	 src: url(fonts\MyriadPro-lt.otf);
+	 src: url(fonts\MyriadPro-Regular.otf);
+	 src: url(fonts\MyriadPro-Semibold.otf);
+	 src: url(fonts\MyriadPro-Semiboldlt.otf);
+ }
+
+ 
+ body{	
+ 
+ /*Commenting out MyriadPro font family as it's not used in this excercise */
+/*	font-family: MyriadPro; */
+	
+    font-family: sans-serif;
+	margin:0;
+	padding:0;
+	background-image: url(background.JPG);	
+    background-repeat:repeat;	
+	
+}
+
+
+.theHeader 
+{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+	left:0px;
+    background-color: #4972A4; 
+	height:60px;
+	background-image: url(header_bg.JPG);
+    background-repeat: repeat;
+}
+.upperLeft{
+float:left;
+left:20px;
+margin-left:10%;
+}
+.upperRight{
+float:right;
+text-align: right;
+color:#fff;
+font-size:.80em;
+top:0;
+margin-right:10%;
+}
+#phoneNo{
+margin-top:0px;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 1.5em;
+    color: #fff;
+    font-variant: small-caps;
+    text-transform: none;
+    font-weight: 200;
+   
+}
+
+h1
+{
+    font-size: 1.6em;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+h2
+{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+h3
+{
+    font-size: 1.2em;
+}
+
+h4
+{
+    font-size: 1.1em;
+}
+
+h5, h6
+{
+    font-size: 1em;
+}
+
+.wrapper{
+    margin: auto;
+    width: 80%;	 	
+	top:10px;
+	position: relative;
+	border: 1px solid white;
+    
+}
+
+
+.main-div {
+    margin: auto;
+    width: 100%; 
+	Height:700px;
+	background-image: url(main_div_bg.JPG);
+    background-repeat: repeat;
+	top:60px;
+}
+#map{
+right:0px;
+position:relative;
+width:300px;
+height:200px
+}
+
+
+#menu{
+width:80%;
+margin:auto;
+background-color: #C6C4B1; 	
+border-radius:4px;
+-web-kit-border-radius:4px;
+height:28px;
+
+}
+
+#menu li {
+    float: left;
+    width: 18%;
+}
+#menu ul {
+   list-style-type: none;  
+   overflow: auto;
+   width: 100%;
+	
+}
+
+
+#menu a{
+font-family: Arial, Helvetica, sans-serif;
+    font-size: .60em;
+    font-weight: normal;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+	padding-left:12px;
+	padding-right:10px;
+	padding-bottom:2px;
+	padding-top:3px;
+}
+
+
+#menu a:hover, #menu .active {    
+    background: #A8A589;
+	color: #fff
+	
+}
+
+
+#rightCol{
+width:30%;
+float:right;
+height:660px;
+background-color:gray;
+}
+#leftCol{
+width:65%;
+float:left;
+height:660px;
+padding:20px;
+}
+
+p.clear {
+    clear: both;
+}
+.aboutUs h2 {
+font-weight: 5px;
+font-size:1.50em;
+color: #4972A4;
+font-style: italic;
+}
+hr{
+  border-top:1px solid #E0E1D3;
+}
+.theFooter{
+    width: 100%;
+	height:50px;
+	color: #D7CB5C;
+	font-size: .80em;
+	top:20px;
+	background-image: url(footer_bg.JPG);
+	background-repeat: repeat;
+	position: relative;
+
+}
+
+#footerLeftDiv{	
+	margin-left:8%;
+	position: relative;
+	float:left;
+	}
+#footerRightDiv{	
+	margin-right:8%;
+	position:relative;
+	float:right;
+}
+
+@media screen and (min-width: 0px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+@media screen and (min-width: 500px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+@media screen and (min-width: 1000px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+div.Div1{
+position:relative;
+top:20px;
+	display:inline-block;
+	width: 430px;
+	padding:20px;
+	
+}
+div.Div2{
+	display:inline-block;
+	width: 240px;
+}
+.mapAddr{
+display:inline-block;
+font-color: red;
+font-size:2px;
+width:150px;
+}
+.navigate{
+display:inline-block;
+font-color: red;
+font-size:2px;
+width:150px;
+border-left: 2em;
+}
+
+
+
+
+</style>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width-device-width, initial-scale=1.0"/>
+
+<title>Assignment</title>
+</head>
+<body>
+<div class="theHeader">
+<div class="upperLeft">
+<img src="logo2.JPG" alt="logo" style="left:30%">
+</div>
+
+<div class="upperRight">
+<p>Call us for a no-obligation service proposal.</p>
+<div id="phoneNo">
+<p>540-2324-4100</p>
+</div>
+</div>
+
+</div>
+<div id="menu"><!--menu-->
+
+<ul>
+<li>
+<a href=#>HOME</>
+</li>
+<li>
+<a href=#>ABOUT US</>
+</li>
+<li>
+<a href=#>PRODUCT & SERVICES </>
+</li>
+<li>
+<a href=#>CLIENTS</>
+</li>
+<li>
+<a href=#>CONTACT US</>
+</li>
+</ul>
+
+
+<!--menu end-->
+</div>
+
+<div class="wrapper">
+
+<div class="main-div" >
+
+<div id="leftCol">
+<div class="aboutUs">
+<h2>ABOUT US</h2>
+<hr>
+</div>
+
+<p>
+The quick brown fox jumps over the lazy dog.  The quick brown fox jumps over the lazy dog.  The quick brown fox jumps over the lazy dog.  The quick brown fox jumps over the lazy dog.  The quick brown fox jumps over the lazy dog.
+The quick brown fox jumps over the lazy dog.  The quick brown fox jumps over the lazy dog.  The quick brown fox jumps over the lazy dog.  The quick brown fox jumps over the lazy dog.  The quick brown fox jumps over the lazy dog.
+The quick brown fox jumps over the lazy dog.  The quick brown fox jumps over the lazy dog.  The quick brown fox jumps over the lazy dog.  The quick brown fox jumps over the lazy dog.  The quick brown fox jumps over the lazy dog.
+
+</p>
+
+<p>
+The quick brown fox jumps over the lazy dog.  The quick brown fox jumps over the lazy dog.  The quick brown fox jumps over the lazy dog.  The quick brown fox jumps over the lazy dog.  The quick brown fox jumps over the lazy dog.
+The quick brown fox jumps over the lazy dog.  The quick brown fox jumps over the lazy dog.  
+</p>
+
+<div id="firstUL" style="float:left;">
+<ul>
+<li>
+he quick brown fox jumps
+</li>
+<li>
+he quick brown fox jumps
+</li>
+<li>
+he quick brown fox jumps
+</li>
+<li>
+he quick brown fox jumps
+</li>
+<li>
+he quick brown fox jumps
+</li>
+</ul>
+
+</div>
+
+<div id="ulDiv"style="margin:0px; width:100% float:center">
+<div id="firstUL" style="float:left;">
+<ul>
+<li>
+he quick brown fox jumps
+</li>
+<li>
+he quick brown fox jumps
+</li>
+<li>
+he quick brown fox jumps
+</li>
+<li>
+he quick brown fox jumps
+</li>
+<li>
+he quick brown fox jumps
+</li>
+</ul>
+
+</div>
+
+<div id="firstUL" style="float:left;">
+<ul>
+<li>
+he quick brown fox jumps
+</li>
+<li>
+he quick brown fox jumps
+</li>
+<li>
+he quick brown fox jumps
+</li>
+<li>
+he quick brown fox jumps
+</li>
+<li>
+he quick brown fox jumps
+</li>
+</ul>
+
+</div>
+
+</div><!--end ul div-->
+
+<div id="pic">
+<img src="middle_image.JPG" alt="main image"style="top:0px; width: 100%"">
+
+</div><!--end picture div-->
+
+
+<p>
+The quick brown fox jumps over the lazy dog.  The quick brown fox jumps over the lazy dog.  The quick brown fox jumps over the lazy dog.  The quick brown fox jumps over the lazy dog.  The quick brown fox jumps over the lazy dog.
+The quick brown fox jumps over the lazy dog.  The quick brown fox jumps over the lazy dog.  
+</p>
+
+</div> <!--end left col-->
+
+
+
+
+<div id="rightCol">
+
+</div> <!--rightCol end-->
+
+</div><!--end main div-->
+
+</div><!--end wrapper div-->
+
+<div class="theFooter">
+<div id ="footerLeftDiv">
+<p> &copy; 2014 Commonwealth Linen Services. All Right Reserved.</p>
+</div>
+<div  id="footerRightDiv"> 
+<p>Contact US</p>
+</div>
+
+</div><!--ends footer -->
+</body>
+</html>
